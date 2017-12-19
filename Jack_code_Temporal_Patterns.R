@@ -98,20 +98,3 @@ STA_output <- as.data.frame(STA_output)
 colnames(STA_output) <- c("PtcpNums", "Scanpath")
 rownames(STA_output) <- STA_output[,1]
 STA_output <- select(STA_output, -PtcpNums)
-
-
-
-# once I'm done, use this to make the code look cleaner: library(formatR)
-# tidy_source("11-10 after connection barv8.R")
-# see more here https://www.youtube.com/watch?v=mRTIj3jCIZA
-
-#alternatively- Rstudio can now format code to look neat. Select the
-#lines of interest and then navigate to Code >> Reformat code or use the keyboard shortcut ctrl + shift + A.
-
-# https://yihui.name/formatr/
-
-
-# checklist- http://adv-r.had.co.nz/Style.html
-# also variables that have multiple words should have some kind of capitalization
-
-#shorten variable names in Jack_code_Raw_Data->Organized.R, then see if lines look better/worse and change accordingly
